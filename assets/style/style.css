@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+/* fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto+Mono:wght@100..700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    text-decoration: none;
+}
+
+body{
+    background-color: #010817;
+}
+
+/* header */
+
+header{
+    width: 100vw;
+}
+
+img#logo{
+    width: 50vw;
+    padding: 20px 20px;
+}
