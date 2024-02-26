@@ -7,7 +7,8 @@
     --background: #010817;
     --red: #ee205a;
     --red-hover: #f33067;
-    --secondary-black: #0d0f1e;
+    --gradient-black1: #26102e;
+    --gradient-black2: #050d1b;
 }
 
 *{
@@ -21,6 +22,8 @@
 
 body{
     background-color: var(--background); 
+    color: white;
+    font-family: "Poppins", sans-serif;
 }
 
 /* header */
@@ -41,12 +44,11 @@ header{
     padding: 20px 20px;
 }
 
-#burger{
+#menu-toggle{
     font-size: 2em;
     margin-left: auto;
     margin-right: 20px;
     display: block;
-    color: white;
     cursor: pointer;
 }
 
@@ -56,14 +58,14 @@ menu{
 
 #nav-links{
     font-size: 1.2em;
-    font-family: "Roboto Mono", "Monospaced";
+    font-family: "Roboto Mono", monospace;
     font-weight: bold;
     display: block;
     width: 100%;
     padding: 10px;
     text-align: center;
-    color: white;
     background-color: var(--red);
+    color: white;
 }
 
 #nav-links:hover{
@@ -73,16 +75,12 @@ menu{
 /* intro */ 
 
 #name{
-    color: white;
-    font-family: "Poppins", 'sans-serif';
     font-size: 2.4em;
     margin: 1vh 10vw;
 }
 
 #intro-desc{
-    color: white;
-    font-family: "Poppins", monospace;
-    font-size: 1em;
+    font-size: 1.2em;
     display: block;
     margin: 0 10vw;
 }
@@ -93,12 +91,80 @@ menu{
 
 .title{
     color: var(--red);
-    font-family: "Poppins", sans-serif;
     font-size: 1.7em;
     font-weight: bold;
     text-align: center;
     margin: 3vh;
 }
+
+#about p{
+    margin: 0vh 10vw;
+    font-size: 1em;
+}
+
+.skill-card{
+    background-image: radial-gradient(circle, var(--gradient-black1), var(--gradient-black2));
+    margin: 5vh 10vw;
+    padding: 10px 3px;
+    border-radius: 10px;
+}
+
+.card-title{
+    text-align: center;
+    margin: 1vh;
+}
+
+
+.skill-img{
+    display: block;
+    margin: auto;
+    width: 25%;
+    background-color: var(--red);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* contact */
+
+#contact{
+    background-color: black;
+    padding: 5px;
+}
+
+#social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icon{
+    background-color: var(--red);
+    width: 40%;
+    border-radius: 10px;
+    padding: 5px;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.social-icon:hover{
+    transform: translateY(-5px);
+}
+
+#email a{
+    color: var(--red);
+    transition: 0.5s;
+}
+
+#email a:hover{
+    color: var(--red-hover);
+}
+
+#email{
+    text-align: center;
+    padding: 15px;
+}
+
 
 /* footer */
 
@@ -107,9 +173,7 @@ footer > p{
     display: block;
     width: 100vw;
     background-color: black;
-    color: white;
     text-align: center;
     font-family: "Roboto Mono", monospace;
-    position: fixed;
     bottom: 0;
 }

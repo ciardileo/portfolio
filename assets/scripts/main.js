@@ -1,5 +1,5 @@
 var menuTeste = document.getElementById("menu")
-var menuIcon = document.getElementById("burger")
+var menuIcon = document.getElementById("menu-toggle")
 
 function clickMenu(){
     console.log(menu.style.display)
