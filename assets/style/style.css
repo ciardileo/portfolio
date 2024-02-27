@@ -124,6 +124,59 @@ menu{
     padding: 10px;
 }
 
+/* projects */
+
+#projects{
+    margin-bottom: 30px;
+}
+
+#slider {
+    display: flex;
+}
+  
+.slide{
+    display: block;
+    width: 90vw;
+    margin: 15px auto
+}
+
+.slide img{
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+  
+.slide-content {
+    color: white;
+    text-align: center;
+}
+  
+  /* Estilos para os botões de navegação */
+.slider-btn {
+    display: block;
+    background-color: var(--gradient-black1);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 20px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+  
+.slider-btn:hover{
+    background-color: var(--gradient-black2);
+}
+
+
+#btn-container{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+  
+
 /* contact */
 
 #contact{
