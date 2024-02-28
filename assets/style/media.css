@@ -1,0 +1,96 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto+Mono:wght@100..700&display=swap');
+
+:root{
+    --background: #010817;
+    --red: #ee205a;
+    --red-hover: #f33067;
+    --gradient-black1: #26102e;
+    --gradient-black2: #050d1b;
+} 
+
+@media screen and (min-width: 768px){
+
+    main{
+        padding: 0 20vw;
+    }
+
+    header{
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 20vw;
+    }
+
+    #logo{
+        padding: 0;
+    }
+
+    menu{
+        display: flex;
+        align-items: right;
+    }
+
+    ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around; 
+    }
+
+    .nav-links{
+        background-color: transparent;
+        transition: 0.4s;
+        margin: 0 20px;
+    }
+
+    .nav-links:hover{
+        color: var(--red-hover);
+        background-color: transparent;
+    }
+
+    #menu-toggle{
+        display: none;
+    }
+
+    #name{
+        font-size: 4em;
+    }
+
+    #intro-desc{
+        font-size: 1.5em;
+    }
+
+    #intro{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #intro-img{
+        display: block;
+        width: 300px;
+        margin: auto;
+    }
+
+    #intro1{
+        width: 65%;
+    }
+
+    #intro2{
+        width: 35%;
+    }
+
+    .title{
+        font-size: 2.5em;
+        margin: 40px;
+    }
+
+    #about p, .slide-content{
+        font-size: 1.2em;
+    }
+
+    #skills{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        row
+    }
+}

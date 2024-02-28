@@ -11,6 +11,28 @@
     --gradient-black2: #050d1b;
 }
 
+html{
+    scroll-behavior: smooth;
+    scrollbar-width: thin;  /* "auto" or "thin" */
+    scrollbar-color: var(--gradient-black2) var(--background) ;   /* scroll thumb and track */   
+}   
+
+/* scroll bar personalization */
+body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+}
+  
+body::-webkit-scrollbar-track {
+    background: var(--background);        /* color of the tracking area */
+}
+  
+body::-webkit-scrollbar-thumb {
+    background-color: var(--gradient-black1);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid var(--gradient-black2);  /* creates padding around scroll thumb */
+}
+
+
 *{
     padding: 0;
     margin: 0;
@@ -18,12 +40,21 @@
     border: none;
     outline: none;
     text-decoration: none;
+    overflow-x: hidden;
 }
 
 body{
     background-color: var(--background); 
     color: white;
     font-family: "Poppins", sans-serif;
+}
+
+main{
+    padding: 0 10vw;
+}
+
+.red{
+    color: var(--red);
 }
 
 /* header */
@@ -40,7 +71,7 @@ header{
 #logo{
     display: block;
     margin-right: auto;
-    width: 50vw;
+    width: 200px;
     padding: 20px 20px;
 }
 
@@ -50,16 +81,16 @@ header{
     margin-right: 20px;
     display: block;
     cursor: pointer;
+    overflow-y: hidden;
 }
 
 menu{
     display: none;
 }
 
-#nav-links{
+.nav-links{
     font-size: 1.2em;
     font-family: "Roboto Mono", monospace;
-    font-weight: bold;
     display: block;
     width: 100%;
     padding: 10px;
@@ -68,7 +99,7 @@ menu{
     color: white;
 }
 
-#nav-links:hover{
+.nav-links:hover{
     background-color: var(--red-hover);
 }
 
@@ -76,13 +107,12 @@ menu{
 
 #name{
     font-size: 2.4em;
-    margin: 1vh 10vw;
+    margin: 20px 0;
 }
 
 #intro-desc{
     font-size: 1.2em;
     display: block;
-    margin: 0 10vw;
 }
 
 #intro-img{display: none;}
@@ -94,31 +124,34 @@ menu{
     font-size: 1.7em;
     font-weight: bold;
     text-align: center;
-    margin: 3vh;
+    margin: 20px 0;
 }
 
 #about p{
-    margin: 0vh 10vw;
     font-size: 1em;
 }
 
 .skill-card{
     background-image: radial-gradient(circle, var(--gradient-black1), var(--gradient-black2));
-    margin: 5vh 10vw;
-    padding: 10px 3px;
+    padding: 10px 10px;
     border-radius: 10px;
+    margin: 20px auto;
+    max-width: 500px;
 }
 
 .card-title{
     text-align: center;
-    margin: 1vh;
+    margin: 15px;
 }
 
+.card-desc{
+    margin: 20px;
+}
 
 .skill-img{
     display: block;
     margin: auto;
-    width: 25%;
+    width: 100px;
     background-color: var(--red);
     border-radius: 10px;
     padding: 10px;
@@ -137,7 +170,9 @@ menu{
 .slide{
     display: block;
     width: 90vw;
-    margin: 15px auto
+    margin: 15px auto;
+    animation-name: fade;
+    animation-duration: 1.5s;
 }
 
 .slide img{
@@ -162,6 +197,10 @@ menu{
     margin: 0 20px;
     cursor: pointer;
     border-radius: 10px;
+}
+
+.slider-btn span{
+    overflow-y: hidden;
 }
   
 .slider-btn:hover{
@@ -192,11 +231,12 @@ menu{
 
 .social-icon{
     background-color: var(--red);
-    width: 40%;
+    width: 60px;
+    height: 60px;
     border-radius: 10px;
     padding: 5px;
     display: block;
-    margin: auto;
+    margin: 20px;
     transition: 0.5s;
 }
 
@@ -222,11 +262,8 @@ menu{
 /* footer */
 
 footer > p{
-    padding: 5px;
-    display: block;
-    width: 100vw;
+    padding: 10px;
     background-color: black;
     text-align: center;
     font-family: "Roboto Mono", monospace;
-    bottom: 0;
 }
