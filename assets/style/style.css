@@ -51,6 +51,7 @@ body{
 
 main{
     padding: 0 10vw;
+
 }
 
 .red{
@@ -146,6 +147,7 @@ menu{
 
 .card-desc{
     margin: 20px;
+    text-align: center;
 }
 
 .skill-img{
