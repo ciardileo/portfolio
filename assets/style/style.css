@@ -171,8 +171,12 @@ menu{
     display: block;
     width: 90vw;
     margin: 15px auto;
-    animation-name: fade;
-    animation-duration: 1.5s;
+    
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
 }
 
 .slide img{
@@ -180,6 +184,8 @@ menu{
     display: block;
     margin-bottom: 10px;
     cursor: pointer;
+    animation-name: fade;
+    animation-duration: 1s;
 }
   
 .slide-content {
@@ -244,9 +250,12 @@ menu{
     transform: translateY(-5px);
 }
 
-#email a{
+#email a {
     color: var(--red);
     transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #email a:hover{
@@ -258,6 +267,12 @@ menu{
     padding: 15px;
 }
 
+#email a::before{
+    content: "\e158";
+    font-family: "Material Symbols Outlined";
+    color: var(--red);
+    margin-right: 10px;
+}
 
 /* footer */
 
